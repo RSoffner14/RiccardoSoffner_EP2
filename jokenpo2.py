@@ -14,13 +14,13 @@ computador=0
 
 while computador_contagem<3 and jogador_contagem<3:
     computador= randint(1,5)
-    jogador= int(input("Escolha um número. 1 é o spock, 2 é lagarto, 3 é pedra, 4 é papel e 5 é tesoura:"))
+    jogador= int(input("Vamos jogar! Para isso, é necessário que você escolha algum número. 1: spock 2: lagarto, 3: pedra, 4: papel e 5: tesoura:"))
 #jogador sendo spock
     if jogador==1:
         if computador==1:
-            print("E um empate")
+            print("Houve um empate!")
         elif computador==2:
-            print("Voce perdeu")
+            print("Você perdeu")
             computador_contagem=computador_contagem+1
         elif computador==3:
             print("Voce ganhou")
@@ -35,9 +35,9 @@ while computador_contagem<3 and jogador_contagem<3:
     if jogador==2:
         print(computador)
         if computador==2:
-            print("E um empate")
+            print("Houve um empate")
         elif computador==1:
-            print("voce ganhou")
+            print("Voce ganhou")
             jogador_contagem=jogador_contagem+1
         elif computador==3:
             print("Voce perdeu")
@@ -51,7 +51,7 @@ while computador_contagem<3 and jogador_contagem<3:
 #jogador sendo pedra            
     if jogador==3:
         if computador==3:
-            print("E um empate")
+            print("Houve um empate")
         elif computador==1:
             print("Voce perdeu")
             computador_contagem=computador_contagem+1
@@ -68,7 +68,7 @@ while computador_contagem<3 and jogador_contagem<3:
 #jogador sendo papel            
     if jogador==4:
         if computador==4:
-            print("E um empate")
+            print("Houve um empate")
         elif computador==1:
             print("Voce ganhou")
             jogador_contagem=jogador_contagem+1
@@ -85,7 +85,7 @@ while computador_contagem<3 and jogador_contagem<3:
 #jogador sendo tesoura    
     if jogador==5:
         if computador==5:
-            print("E um empate")
+            print("Houve um empate")
         elif computador==1:
             print("Voce perdeu")
             computador_contagem=computador_contagem+1
@@ -100,8 +100,8 @@ while computador_contagem<3 and jogador_contagem<3:
             jogador_contagem=jogador_contagem+1
             computador_contagem=0
 if jogador_contagem==(3):
-    print("voce ganhou o jogo, parabens")
+    print("voce ganhou o jogo, parabéns mestre")
 elif computador_contagem==3:
-    print("voce perdeu o jogo, e uma pena")
+    print("infelizmente voce perdeu o jogo, e uma pena. Tente novamente")
 else:
     print("deu erro")
